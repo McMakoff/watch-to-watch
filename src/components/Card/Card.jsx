@@ -29,14 +29,9 @@ export default class Card extends Component {
         }, 200);
       } else {
         video.pause();
-        video.currentTime = 0;
         video.load();
       }
     }
-  }
-
-  componentWillUnmount() {
-    this.setState({isLoading: false});
   }
 
   mouseEnterHandler() {

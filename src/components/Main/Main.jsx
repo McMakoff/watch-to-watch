@@ -6,7 +6,6 @@ import FilterList from "../FilterList/FilterList";
 export default class Main extends Component {
 
   render() {
-    const {initialData} = this.props;
     return (
       <React.Fragment>
         <section className="movie-card">
@@ -94,10 +93,3 @@ export default class Main extends Component {
     );
   }
 }
-
-Main.propTypes = {
-  initialData: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    preview: PropTypes.string.isRequired
-  }))
-};
